@@ -47,17 +47,15 @@ const html = () => {
 
 const css = () => {
     return app.gulp.src(app.path.src.css)
-    .pipe(concat('styles.css'))
+    .pipe(concat('boostrap.css'))
     .pipe (cleanCSS())
-    .pipe (rename ({suffix: '.min'}))
     .pipe(app.gulp.dest(app.path.build.css))
 }
 
 const scripts = () => {
     return app.gulp.src(app.path.src.js)
-    .pipe (concat ( 'scripts.js'))
+    .pipe (concat ( 'boostrap.js'))
     .pipe (uglify ())
-    .pipe (rename ({suffix: '.min'}))
     .pipe(app.gulp.dest(app.path.build.js))
 }
 
