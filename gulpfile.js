@@ -21,9 +21,9 @@ const path = {
     },
     src: {
         html: `${srcFolder}/*.html`,
-        css: `${srcFolder}/**/*.css`,
-        js: `${srcFolder}/**/*.js`,
-        img: `${srcFolder}/**/*.+ (jpg | jpeg | png | gif)`,
+        css: `${srcFolder}/css/*.css`,
+        js: `${srcFolder}/js/*.js`,
+        img: `${srcFolder}/img/*.+ (jpg | jpeg | png | gif)`,
     },
     watch: {
         files: `${srcFolder}/*`,
@@ -31,7 +31,6 @@ const path = {
     clean: buildFolder,
     buildFolder: buildFolder,
     srcFolder: srcFolder,
-    ftp: ``
 } 
 
 global.app ={
@@ -76,14 +75,11 @@ const reset = () => {
     return deleteAsync(app.path.clean);
 }
 
-const watcher = (done) => {
+const watcher = () => {
     gulp.watch(app.path.watch.files, html);
-    gulp.watch(app.path.watch.files, scripts);
-    gulp.watch(app.path.watch.files, imgs);
-    done();
 }
 
-const server = (done) => {
+const server = () => {
     browsersync.init({
         server: {
             baseDir: `${app.path.build.html}`
@@ -91,12 +87,13 @@ const server = (done) => {
         notify: false,
         port: 3000,
     });
-    done();
 }
 
 /*------------------------------------------------------------------------------------*/
 
-const dev = gulp.series(reset, html, css, scripts, imgs, gulp.parallel(watcher, server));
+const mainTask = gulp.series( html, css, scripts, imgs);
+
+const dev = gulp.series(reset,mainTask, gulp.parallel(watcher, server));
 
 /*------------------------------------------------------------------------------------*/
 
