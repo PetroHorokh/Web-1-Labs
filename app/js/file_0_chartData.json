@@ -1,0 +1,208 @@
+{
+    "Charts":[
+        [
+            {
+                "point": 15,
+                "checker": false
+            },
+            {
+                "point": 18,
+                "checker": false
+            },
+            {
+                "point": 20,
+                "checker": false
+            },
+            {
+                "point": 19,
+                "checker": true
+            },
+            {
+                "point": 17,
+                "checker": false
+            },
+            {
+                "point": 16,
+                "checker": false
+            },
+            {
+                "point": 18,
+                "checker": false
+            },
+            {
+                "point": 20,
+                "checker": false
+            },
+            {
+                "point": 19,
+                "checker": false
+            },
+            {
+                "point": 20,
+                "checker": false
+            },
+            {
+                "point": 28,
+                "checker": true
+            },
+            {
+                "point": 15,
+                "checker": false
+            },
+            {
+                "point": 16,
+                "checker": false
+            },
+            {
+                "point": 18,
+                "checker": false
+            },
+            {
+                "point": 16,
+                "checker": false
+            },
+            {
+                "point": 15,
+                "checker": true
+            },
+            {
+                "point": 21,
+                "checker": false
+            },
+            {
+                "point": 22,
+                "checker": false
+            },
+            {
+                "point": 22,
+                "checker": false
+            },
+            {
+                "point": 20,
+                "checker": false
+            },
+            {
+                "point": 17,
+                "checker": false
+            },
+            {
+                "point": 14,
+                "checker": true
+            },
+            {
+                "point": 13,
+                "checker": false
+            },
+            {
+                "point": 12,
+                "checker": false
+            },
+            {
+                "point": 11.5,
+                "checker": false
+            },
+            {
+                "point": 11,
+                "checker": false
+            }
+        ],
+        [
+            {
+                "point": 11,
+                "checker": false
+            },
+            {
+                "point": 12,
+                "checker": false
+            },
+            {
+                "point": 13,
+                "checker": false
+            },
+            {
+                "point": 13.5,
+                "checker": true
+            },
+            {
+                "point": 15,
+                "checker": false
+            },
+            {
+                "point": 17,
+                "checker": false
+            },
+            {
+                "point": 24,
+                "checker": false
+            },
+            {
+                "point": 15,
+                "checker": false
+            },
+            {
+                "point": 14,
+                "checker": true
+            },
+            {
+                "point": 16,
+                "checker": false
+            },
+            {
+                "point": 16.5,
+                "checker": false
+            },
+            {
+                "point": 16,
+                "checker": false
+            },
+            {
+                "point": 16.5,
+                "checker": false
+            },
+            {
+                "point": 18,
+                "checker": false
+            },
+            {
+                "point": 21,
+                "checker": false
+            },
+            {
+                "point": 25,
+                "checker": true
+            },
+            {
+                "point": 24,
+                "checker": false
+            },
+            {
+                "point": 23,
+                "checker": false
+            },
+            {
+                "point": 19,
+                "checker": false
+            },
+            {
+                "point": 22,
+                "checker": false
+            },
+            {
+                "point": 31,
+                "checker": true
+            },
+            {
+                "point": 25,
+                "checker": false
+            },
+            {
+                "point": 11,
+                "checker": false
+            },
+            {
+                "point": 8,
+                "checker": false
+            }
+        ]
+    ]
+}

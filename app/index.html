@@ -3,35 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <title>Dash</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" integrity="sha512-8bHTC73gkZ7rZ7vpqUQThUDhqcNFyYi2xgDgPDHc+GXVGHXq+xPjynxIopALmOPqzo9JZj0k6OqqewdGO3EsrQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="\css\styles.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" integrity="sha512-8bHTC73gkZ7rZ7vpqUQThUDhqcNFyYi2xgDgPDHc+GXVGHXq+xPjynxIopALmOPqzo9JZj0k6OqqewdGO3EsrQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js" integrity="sha512-dqw6X88iGgZlTsONxZK9ePmJEFrmHwpuMrsUChjAw1mRUhUITE5QU9pkcSox+ynfLhL15Sv2al5A0LVyDCmtUw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js" integrity="sha512-ElRFoEQdI5Ht6kZvyzXhYG9NqjtkmlkfYk0wr6wHxU9JEHakS7UJZNeml5ALk+8IKlU6jDgMabC3vkumRokgJA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 <body>
+  
+  @@include('html/pusher.html')
 
-    <div class="ui bottom attached pushable">
-        <div class="ui visible inverted left vertical sidebar menu" style="background-color: #393F4F;">
-          <a class="item">
-            <i class="file alternate outline icon"></i>
-            Home
-          </a>
-          <a class="item">
-            <i class="block layout icon"></i>
-            Topics
-          </a>
-          <a class="item">
-            <i class="smile icon"></i>
-            Friends
-          </a>
-          <a class="item">
-            <i class="calendar icon"></i>
-            History
-          </a>
-        </div>
-        <div class="pusher">
-          <div class="ui basic segment">
-                <p>dsadsada</p>
-          </div>
-        </div>
+  @@include('html/sidebar.html')
+
+  @@include('html/main.html')
+
+  @@include('html/upper_row.html')
+
+  @@include('html/middle_row.html')
+
+  @@include('html/lower_row.html')
+
       </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js" integrity="sha512-dqw6X88iGgZlTsONxZK9ePmJEFrmHwpuMrsUChjAw1mRUhUITE5QU9pkcSox+ynfLhL15Sv2al5A0LVyDCmtUw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    </div>
+  </div>
+
+  <script src="\js\scripts.min.js"></script>
+  <script>
+   
+    $('.progress_bar').progress();
+
+    $('.ui.primary.button.icon')
+    .popup({
+    position : 'right center',
+    title    : 'Test',
+    content  : 'This is a testing button',
+    on    : 'click',
+  });
+  </script>
 </body>
 </html>

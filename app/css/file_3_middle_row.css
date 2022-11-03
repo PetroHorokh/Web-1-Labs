@@ -1,0 +1,30 @@
+.row.menu_middle{
+    background-color: #2B303E;
+    color: #2B303E;
+}
+.ui.left.icon.input{
+    background-color: #2B303E;
+    width: 20rem;
+}
+.ui.left.icon.input input{
+    background-color: #393F4F;
+    border-radius: 2rem;
+    width: 15rem;
+    padding: 0.5em;
+}
+.ui.left.icon.input i{
+    color: white;
+}
+#new_value_button{
+    background-color: #62BAF0;
+    border-radius: 3rem;
+    font-size: 0.9rem;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+    padding-left: 2.2rem;
+    padding-right: 2.2rem;
+}
+.plus.icon{
+    font-size: 0.5rem;
+    padding-left: 0.5rem;
+}
